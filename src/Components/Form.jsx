@@ -4,7 +4,7 @@ export default function Form({ item }) {
   //   console.log(item);
   return (
     <div>
-      <form action={item[0]} ta>
+      <form action={item[0]} target="_blank">
         <img src={item[1]} alt="" />
 
         <label htmlFor={item[2]}>{item[2]}:</label>
