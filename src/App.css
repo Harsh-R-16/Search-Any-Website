@@ -1,38 +1,72 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1.5px;
+}
+body {
+  background-color: #f1f5f8;
+}
+h1 {
+  color: #fff;
+  background-color: #102a42;
+  font-weight: 500;
   text-align: center;
+  font-size: 28px;
+  padding: 20px 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section div {
+  border: 1px solid #000;
+  padding: 22px 14px;
+  margin: 15px;
+  background-color: #fff;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 7px;
+  transition: 0.25s ease-in-out;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+section div:hover {
+  box-shadow: 3px 3px 11px 2px rgb(194, 188, 188);
+  transform: scale(1.01);
+  transition: 0.25s ease-in-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+img {
+  height: 37px;
+  aspect-ratio: 1;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+input {
+  flex-grow: 1;
+  padding: 2px 5px;
+  margin-right: 7px;
+}
+label {
+  margin-right: 5px;
+}
+button {
+  padding: 4px 10px;
+  color: #102a42;
+  background-color: #f1f5f8;
+  border: 1px solid #102a42;
+  font-size: 12px;
+}
+@media (max-width: 1500px) {
+  section {
+    grid-template-columns: 1fr 1fr;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 1040px) {
+  section {
+    grid-template-columns: 1fr;
   }
 }
