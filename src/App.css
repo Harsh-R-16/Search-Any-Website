@@ -15,7 +15,8 @@ h1 {
   font-size: 28px;
   padding: 20px 10px;
   position: sticky;
-  top: 0
+  top: 0;
+  z-index: 1;
 }
 section {
   display: grid;
